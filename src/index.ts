@@ -19,6 +19,7 @@ class API {
     webhooks: Webhooks;
     invites: Modules.Invites;
     connections: Modules.Connections;
+    tunels: Modules.Tunels;
 
     /* [UGC modules] */
     /* [/UGC] */
@@ -40,6 +41,7 @@ class API {
         this.webhooks = new Webhooks(this.http);
         this.invites = new Modules.Invites(this.http);
         this.connections = new Modules.Connections(this.http);
+        this.tunels = new Modules.Tunels(this.http);
     }
 }
 

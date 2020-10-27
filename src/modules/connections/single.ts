@@ -81,5 +81,10 @@ export default class ConnectionController {
     }
 
     /* [UGC methods] */
+    public async destroyTunel(tunelId: string): Promise<string> {
+        const response = await this.http.delete(`/connections/${this.id}/tunels/${tunelId}`);
+
+        return parseResponse(response, { successCode: 204 });
+    }
     /* [/UGC] */
 }
