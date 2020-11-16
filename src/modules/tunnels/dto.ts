@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-interface, max-len */
 
-export class Tunel {
+export class Tunnel {
     id: string;
 
     input: {

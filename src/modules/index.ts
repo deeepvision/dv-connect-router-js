@@ -1,11 +1,11 @@
 import Invites from './invites';
 import Connections from './connections';
-import Tunels from './tunels';
+import Tunnels from './tunnels';
 
 export {
     Invites,
     Connections,
-    Tunels,
+    Tunnels,
     /* [UGC module-export] */
     /* [/UGC] */
 };

@@ -2,7 +2,7 @@
 
 module.exports = {
   root: true,
-  extends: ['@deepvision', '@deepvision/eslint-config/plugins/typescript'],
+  extends: ['@deeepvision', '@deeepvision/eslint-config/plugins/typescript'],
   rules: {
     'no-empty-pattern': 'off',
     '@typescript-eslint/no-type-alias': 'off',

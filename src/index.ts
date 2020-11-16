@@ -1,5 +1,5 @@
-import HttpClient from '@deepvision/http-client';
-import { APIError, Webhooks } from '@deepvision/api-kit';
+import HttpClient from '@deeepvision/http-client';
+import { APIError, Webhooks } from '@deeepvision/api-kit';
 import * as Modules from './modules';
 /* [UGC import] */
 /* [/UGC] */
@@ -19,7 +19,7 @@ class API {
     webhooks: Webhooks;
     invites: Modules.Invites;
     connections: Modules.Connections;
-    tunels: Modules.Tunels;
+    tunnels: Modules.Tunnels;
 
     /* [UGC modules] */
     /* [/UGC] */
@@ -41,7 +41,7 @@ class API {
         this.webhooks = new Webhooks(this.http);
         this.invites = new Modules.Invites(this.http);
         this.connections = new Modules.Connections(this.http);
-        this.tunels = new Modules.Tunels(this.http);
+        this.tunnels = new Modules.Tunnels(this.http);
     }
 }
 

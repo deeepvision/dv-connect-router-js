@@ -1,10 +1,10 @@
-import { APIError } from '@deepvision/api-kit';
-import '@deepvision/test-kit-jest';
+import { APIError } from '@deeepvision/api-kit';
+import '@deeepvision/test-kit-jest';
 import * as nock from 'nock';
 import Router from '@/index';
 import Invites from '@/modules/invites';
 import Connections from '@/modules/connections';
-import Tunels from '@/modules/tunels';
+import Tunnels from '@/modules/tunnels';
 /* [UGC import] */
 /* [/UGC] */
 
@@ -21,6 +21,6 @@ describe('Router', () => {
         /* [/UGC] */
         expect(router.invites).toBeInstanceOf(Invites);
         expect(router.connections).toBeInstanceOf(Connections);
-        expect(router.tunels).toBeInstanceOf(Tunels);
+        expect(router.tunnels).toBeInstanceOf(Tunnels);
     });
 });

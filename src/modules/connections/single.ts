@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars, @typescript-eslint/no-unused-vars, max-len */
-import { HttpClient } from '@deepvision/http-client';
-import { APIError, parseResponse, ID } from '@deepvision/api-kit';
+import { HttpClient } from '@deeepvision/http-client';
+import { APIError, parseResponse, ID } from '@deeepvision/api-kit';
 /* [UGC import] */
 /* [/UGC] */
 
@@ -81,8 +81,8 @@ export default class ConnectionController {
     }
 
     /* [UGC methods] */
-    public async destroyTunel(tunelId: string): Promise<string> {
-        const response = await this.http.delete(`/connections/${this.id}/tunels/${tunelId}`);
+    public async destroyTunnel(tunnelId: string): Promise<string> {
+        const response = await this.http.delete(`/connections/${this.id}/tunnels/${tunnelId}`);
 
         return parseResponse(response, { successCode: 204 });
     }
